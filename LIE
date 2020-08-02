@@ -1,0 +1,338 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div  {
+background-color: white;
+  width: 1300px;
+  border: 2px solid green;
+  padding: 10px;
+  margin: 2px;
+}
+.dropdown {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px;
+  font-size: 15px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #000080
+    }
+
+    25% {
+        background-color: #DC143C
+    }
+
+    50% {
+        background-color: #FFD700
+    }
+
+    75% {
+        background-color: #228B22
+    }
+
+    100% {
+        background-color: #FF1493
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+ background-color: #ddd;
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee span {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  left: 100%;
+  animation: marquee 8s linear infinite;
+}
+.marquee:hover span {
+  animation-play-state: paused;
+}
+
+.marquee span:nth-child(1) {
+  animation-delay: 0s;
+}
+.marquee span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.marquee span:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.marquee span:nth-child(4) {
+  animation-delay: 2.4s;
+}
+.marquee span:nth-child(5) {
+  animation-delay: 3.2s;
+}
+
+@keyframes marquee {
+  0%   { left: 100%; }
+  100% { left: -100%; }
+}
+
+	/*add full-width input fields*/ 
+	input[type=text], 
+	input[type=password] { 
+		width: 100%; 
+		padding: 12px 20px; 
+		margin: 8px 0; 
+		display: inline-block; 
+		border: 2px solid #ccc; 
+		box-sizing: border-box; 
+	} 
+	/* set a style for all buttons*/ 
+	button { 
+		background-color: green; 
+		color: white; 
+		padding: 14px 20px; 
+		margin: 8px 0; 
+		cursor: pointer; 
+		width: 100%; 
+	} 
+	/*set styles for the cancel button*/ 
+	.cancelbtn { 
+		padding: 14px 20px; 
+		background-color: #FF2E00; 
+	} 
+	/*float cancel and signup buttons and add an equal width*/ 
+	.cancelbtn, 
+	.signupbtn { 
+		float: left; 
+		width: 50% 
+	} 
+	/*add padding to container elements*/ 
+	.container { 
+		padding: 16px; 
+	} 
+	/*define the modal’s background*/ 
+	
+	.modal { 
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		left: 0; 
+		top: 0; 
+		width: 100%; 
+		height: 100%; 
+		overflow: auto; 
+		background-color: rgb(0, 0, 0); 
+		background-color: rgba(0, 0, 0, 0.4); 
+		padding-top: 60px; 
+	} 
+	/*define the modal-content background*/ 
+	
+	.modal-content { 
+		background-color: #fefefe; 
+		margin: 5% auto 15% auto; 
+		border: 1px solid #888; 
+		width: 80%; 
+	} 
+	/*define the close button*/ 
+	
+	.close { 
+		position: absolute; 
+		right: 35px; 
+		top: 15px; 
+		color: #000; 
+		font-size: 40px; 
+		font-weight: bold; 
+	} 
+	/*define the close hover and focus effects*/ 
+	
+	.close:hover, 
+	.close:focus { 
+		color: red; 
+		cursor: pointer; 
+	} 
+	
+	.clearfix::after { 
+		content: ""; 
+		clear: both; 
+		display: table; 
+	} 
+	
+	@media screen and (max-width: 300px) { 
+		.cancelbtn, 
+		.signupbtn { 
+			width: 100%; 
+		} 
+	} 
+
+</style>
+<title>LIE Learning!- Learn, Improve, Excel!</title>
+ <link rel = "icon" type = "image/ico" href = "l.ico">
+</head>
+
+<body alink="white" link="red" vlink="magneta">
+<marquee width="92%"><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!-------------------</span><span class="rainbow">Welcome To LIE Learning!---------------------------Here You Will Find all The Learning Info for kg-grade 12!-------------------------Please Follow Us on Youtube at LIE Learning!-------------------------Enjoy Learning!</span></marquee>
+<iframe src="http://free.timeanddate.com/clock/i7e5pjb2/n776/fn7/fcfff/tct/pct/ftb/tt0/tw0/tm1/tb4" frameborder="0" width="100" height="40" allowTransparency="true"></iframe>
+<hr>
+<h1 align="center"><strong><span class="rainbow">LIE Learning</span></strong></h1>
+
+
+
+
+
+
+	<h2>Modal Signup Form</h2> 
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> 
+
+	<div id="id01" class="modal"> 
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+		<form class="modal-content animate" action="/action_page.php"> 
+			<div class="container"> 
+				<label><b>Email</b></label> 
+				<input type="text" placeholder="Enter Email" name="email" required> 
+
+				<label><b>Password</b></label> 
+				<input type="password" placeholder="Enter Password" name="psw" required> 
+
+				<label><b>Repeat Password</b></label> 
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
+				<input type="checkbox"> Remember me 
+				<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> 
+
+				<div class="clearfix"> 
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+					<button type="submit" class="signupbtn">Sign Up</button> 
+				</div> 
+			</div> 
+		</form> 
+	</div> 
+
+	<!--close the modal by just clicking outside of the modal-->
+	<script> 
+		var modal = document.getElementById('id01'); 
+
+		window.onclick = function(event) { 
+			if (event.target == modal) { 
+				modal.style.display = "none"; 
+			} 
+		} 
+	</script> 
+
+
+
+
+<p align="center"><span class="rainbow"> Play Music While You Learn! Click On The Buttons To start and stop the music!</span><br>
+<audio id="myAudio">
+  <source src="strt.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script></p>
+
+<script id="appyWidgetInit" src="https://chatbot.appypie.com/widget/loadbuild.js?cid=kda29k5l-AGENT1596189919307-BOTID1596189919307&name=mixBuild"></script>
+
+
+
+<h2 align="center"><span class="rainbow">Play Games About Study! For Pre-School - Grade 8!</span></h2>
+<div>
+<h2 align="center"><span class="rainbow">Maths!</span></h2>
+<iframe src="https://www.mathgames.com" height="1000" width="1310" title="Math Games!" frameborder="0" encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div>
+<h2 align="center"><span class="rainbow">Science!</span></h2>
+<iframe src="https://www.sciencekids.co.nz/gamesactivities.html" height="1000" width="1310" title="Math Games!" frameborder="0" encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3 align="center"><span class="rainbow">Please Give Us a Comment About Our Website Down Below In the Comments Box!</span></h3>
+
+<!-- Want My Website Code? Send Mail To mehtharsh32@gmail.com -->
+
+
+<form action="file:///C:/Users/Jugal/Desktop/Comment.html" align="center" method="post"><span class="rainbow">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+ <label for="Comment">Enter Your Comments Down Below!:</label><br>
+  <input type="text" id="Comment" name="Comment">
+<br>
+  <input type="submit" value="Submit">
+</span></form>
+
+<br><br><br><br>
+
+<div><p align="center"><span class="rainbow">
+Here is the Ncert Link for all the NCERT TextBooks available. Click On the link to visit the website and download the textbooks of your choice!:
+<form action="http://ncertbooks.prashanthellina.com/" align="center">
+  <input type="submit" value="Click Here to Visit NCERT TB link">
+</form> 
+</span></p>
+<p align="center"><span class="rainbow">
+Here is the link for MATH examplar That is a online math Practise book!
+<form action="http://www.ncert.nic.in/exemplar/exemplar.html" align="center">
+  <input type="submit" value="Click Here to Visit NCERT examplar link">
+</form> 
+</span></p></div>
+
+
+<hr>
+<p align="center"><span class="rainbow"> Visit Us on our Youtube Page!         and If Any Enquiries, Please email us at mehtharsh32@gmail.com!     The Page Might Load Slowly!</span><br>
+
+<a href="https://www.youtube.com/channel/UCWiJ6FSt4azPoDNi5J76tcg?view_as=subscriber" target="_blank">
+         <img alt="Youtube" src="data:image/png;base64,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"
+         width="50" height="30" align="center">
+</a>
+<p align="center"><font color="white">You Agree To Our PRIVACY POLICY and our terms of use.<br>Copyright 2019-2020 by LIE Learning. All Rights Reserved©</font></p>
+</body>
+</html>
